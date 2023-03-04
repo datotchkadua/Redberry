@@ -70,7 +70,7 @@ export const Cv = ({ data, width, border }) => {
             <img
               src={image}
               alt="yjyh"
-              className="mt-10   w-24 h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-56 2xl:h-56  rounded-full mx-3"
+              className="mt-10  w-24 h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-56 2xl:h-56  rounded-full mx-3"
             />
           </div>
         )}
