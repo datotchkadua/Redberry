@@ -38,7 +38,7 @@ export const Cv = ({ data, width, border }) => {
 
   return (
     <div className={` bg-white ${width} flex flex-col px-5 border ${border}`}>
-      <div className="flex w-full relative ">
+      <div className="flex w-full  ">
         <div className="flex flex-col mt-16 ">
           <div className="flex flex-col  lg:flex-row ">
             <h1 className=" break-all mr-3 text-3xl font-bold color text-redText  ">
@@ -66,7 +66,7 @@ export const Cv = ({ data, width, border }) => {
           )}
         </div>
         {image && (
-          <div className="absolute right-0 w-2/5 flex  justify-end  ">
+          <div className=" w-2/5 flex  justify-end  ">
             <img
               src={image}
               alt="yjyh"
