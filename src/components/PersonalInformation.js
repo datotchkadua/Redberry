@@ -73,7 +73,7 @@ const PersonalInformation = () => {
               description="მინიმუმ 2 ასო, ქართული ასოები"
               required="required"
               inputId="surname"
-              pattern={/^[\ა-ჰ]{2,}$/}
+              pattern={/^[ა-ჰ]{2,}$/}
               width="w-full"
             />
           </div>
