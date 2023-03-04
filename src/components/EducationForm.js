@@ -9,7 +9,6 @@ const EducationForm = ({ educationIndex }) => {
           label="სასწავლებელი"
           placeholder="სასწავლებელი"
           description="მინიმუმ 2 სიმბოლო"
-          
           educationIndex={educationIndex}
           inputId="institute"
           pattern={/.{2,}/}

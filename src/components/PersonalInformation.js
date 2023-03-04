@@ -16,7 +16,6 @@ const PersonalInformation = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  
   const openExperience = () => {
     if (validationPersonal) {
       navigate("/experience");
@@ -30,7 +29,7 @@ const PersonalInformation = () => {
       /^\+995\s5\d{2}\s\d{2}\s\d{2}\s\d{2}$/.test(phone_number) &&
       image
     ) {
-      localStorage.setItem("validationPersonal", "true"); 
+      localStorage.setItem("validationPersonal", "true");
       dispatch(trueValidation());
     } else {
       localStorage.setItem("validationPersonal", "false");
@@ -64,7 +63,7 @@ const PersonalInformation = () => {
               description="მინიმუმ 2 ასო, ქართული ასოები"
               required="required"
               inputId="name"
-              pattern={/^[\ა-ჰ]{2,}$/}
+              pattern={/^[ა-ჰ]{2,}$/}
               width="w-full"
             />
             <Input

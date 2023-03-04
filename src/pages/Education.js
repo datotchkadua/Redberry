@@ -45,7 +45,7 @@ const Education = () => {
   };
 
   const addEducationComponent = () => {
-    //dakkomentarebulia dabla
+    
     dispatch(addEducations());
   };
 
