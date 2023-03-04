@@ -40,7 +40,7 @@ export const Cv = ({ data, width, border }) => {
     <div className={` bg-white ${width} flex flex-col px-5 border ${border}`}>
       <div className="flex w-full  justify-between  ">
         <div className="flex flex-col mt-16 ">
-          <div className="flex flex-col  lg:flex-row ">
+          <div className="flex flex-col  lg:flex-row max-w-md   ">
             <h1 className=" break-all mr-3 text-3xl font-bold color text-redText  ">
               {name}
             </h1>
