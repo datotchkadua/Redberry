@@ -30,10 +30,10 @@ const PersonalInformation = () => {
       /^\+995\s5\d{2}\s\d{2}\s\d{2}\s\d{2}$/.test(phone_number) &&
       image
     ) {
-      localStorage.setItem("validationPersonal", "true"); // Set the value in localStorage directly
+      localStorage.setItem("validationPersonal", "true"); 
       dispatch(trueValidation());
     } else {
-      localStorage.setItem("validationPersonal", "false"); // Set the value in localStorage directly
+      localStorage.setItem("validationPersonal", "false");
       dispatch(falseValidation());
     }
   };
