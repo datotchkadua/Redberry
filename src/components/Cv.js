@@ -66,7 +66,7 @@ export const Cv = ({ data, width, border }) => {
           )}
         </div>
         {image && (
-          <div className="absolute righ-0 w-2/5 flex  justify-end relative ">
+          <div className="absolute right-0 w-2/5 flex  justify-end  ">
             <img
               src={image}
               alt="yjyh"
