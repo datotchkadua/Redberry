@@ -3,8 +3,7 @@ import emailIcon from "../assets/gmail.svg";
 import phoneIcon from "../assets/phone.svg";
 import logo from "../assets/logo-bottom 1.svg";
 
-
-export const Cv = ({ data, width,border }) => {
+export const Cv = ({ data, width, border }) => {
   const {
     name,
     surname,
@@ -15,7 +14,6 @@ export const Cv = ({ data, width,border }) => {
     experiences,
     educations,
   } = data;
-  
 
   const hasNonEmptyFields = experiences.some((experience) => {
     const { position, employer, start_date, due_date, description } =
@@ -40,7 +38,7 @@ export const Cv = ({ data, width,border }) => {
 
   return (
     <div className={` bg-white ${width} flex flex-col px-5 border ${border}`}>
-      <div className="flex w-full  ">
+      <div className="flex w-full relative ">
         <div className="flex flex-col mt-16 ">
           <div className="flex flex-col  lg:flex-row ">
             <h1 className=" break-all mr-3 text-3xl font-bold color text-redText  ">
@@ -68,11 +66,11 @@ export const Cv = ({ data, width,border }) => {
           )}
         </div>
         {image && (
-          <div className=" w-2/5 flex  justify-end ">
+          <div className="absolute righ-0 w-2/5 flex  justify-end relative ">
             <img
               src={image}
               alt="yjyh"
-              className="mt-10  w-24 h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-56 2xl:h-56  rounded-full mx-3"
+              className="mt-10   w-24 h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-56 2xl:h-56  rounded-full mx-3"
             />
           </div>
         )}
